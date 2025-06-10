@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triosys Marketing Solutions - Local Business Digital Solutions</title>
+    
+    <!-- External CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <svg class="logo" viewBox="0 0 200 60" fill="none">
+                    <!-- Gift box outline in red -->
+                    <rect x="10" y="15" width="30" height="25" rx="3" fill="none" stroke="#e53e3e" stroke-width="2.5"/>
+                    <!-- Gift ribbon horizontal -->
+                    <line x1="10" y1="27.5" x2="40" y2="27.5" stroke="#e53e3e" stroke-width="2.5"/>
+                    <!-- Gift ribbon vertical -->
+                    <line x1="25" y1="15" x2="25" y2="40" stroke="#e53e3e" stroke-width="2.5"/>
+                    <!-- Bow curves -->
+                    <path d="M20,15 Q17,10 20,8 Q25,10 22,15" fill="#e53e3e"/>
+                    <path d="M28,15 Q31,10 28,8 Q23,10 26,15" fill="#e53e3e"/>
+                    <!-- B letter in blue inside box -->
+                    <text x="19" y="33" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1976d2">B</text>
+                    <!-- Bumper text in red -->
+                    <text x="50" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#e53e3e">Bumper</text>
+                    <!-- pick text in blue -->
+                    <text x="130" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#1976d2">pick</text>
+                    <!-- by Triosys text -->
+                    <text x="50" y="40" font-family="Arial, sans-serif" font-size="9" font-weight="400" fill="#6b7280">by Triosys Marketing Solutions</text>
+                </svg>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#bumperpick">Bumperpick App</a></li>
+                <li><a href="#mission">Mission & Vision</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="#bumperpick" class="cta-btn">Explore Bumperpick</a>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-main-title">Connect Locally, <span class="gradient-text">Grow Digitally</span></h1>
+            <p class="hero-subtitle">Empowering local businesses and consumers through innovative digital platforms that simplify everyday connections and choices.</p>
+            <div class="hero-buttons">
+                <a href="#bumperpick" class="btn-primary">Discover Bumperpick</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-title fade-up">Welcome to Triosys Marketing Solutions</div>
+            <div class="section-subtitle fade-up">Forward-thinking digital solutions provider based in India</div>
+            
+            <div class="about-content">
+                <div class="about-text fade-up">
+                    <p>Triosys Marketing Solutions is a forward-thinking digital solutions provider based in India. With a sharp focus on innovation and user-centric design, we help businesses and local communities connect better through smart technology.</p>
+                    <br>
+                    <p>Our team blends marketing insight with software expertise to deliver impactful solutions. At the core of our service is Bumperpick, a hyperlocal search application designed to connect users with local vendors, services, and businesses – all in one place.</p>
+                </div>
+                <div class="about-image fade-up">
+                    <div class="floating-cards">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-search" style="color: var(--primary-blue); font-size: 2rem; margin-bottom: 1rem;"></i>
+                            <h4>Smart Search</h4>
+                            <p>Find exactly what you need</p>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                            <h4>Local Focus</h4>
+                            <p>Connect with nearby businesses</p>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-handshake" style="color: var(--primary-blue); font-size: 2rem; margin-bottom: 1rem;"></i>
+                            <h4>Trusted Network</h4>
+                            <p>Verified vendors and services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section mission-vision" id="mission">
+        <div class="container">
+            <div class="section-title fade-up">Mission & Vision</div>
+            <div class="section-subtitle fade-up">Driving the future of local commerce</div>
+            
+            <div class="mv-grid">
+                <div class="mv-card fade-up">
+                    <h3>Our Mission</h3>
+                    <p>To empower local businesses and consumers through innovative digital platforms that simplify everyday connections and choices.</p>
+                </div>
+                <div class="mv-card fade-up">
+                    <h3>Our Vision</h3>
+                    <p>To become the most trusted enabler of local commerce and discovery by building scalable, user-friendly, and community-driven digital tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bumperpick Section -->
+    <section class="section bumperpick" id="bumperpick">
+        <div class="bumperpick-animation">
+            <div class="orbit-container">
+                <div class="orbit orbit-1">
+                    <div class="orbit-dot"></div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="orbit-dot"></div>
+                </div>
+                <div class="orbit orbit-3">
+                    <div class="orbit-dot"></div>
+                </div>
+            </div>
+            <div class="floating-icons">
+                <div class="float-icon icon-1"><i class="fas fa-search"></i></div>
+                <div class="float-icon icon-2"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="float-icon icon-3"><i class="fas fa-store"></i></div>
+                <div class="float-icon icon-4"><i class="fas fa-handshake"></i></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title fade-up">Your Local Search <span class="gradient-text">Companion</span></div>
+            <div class="section-subtitle fade-up">Bumperpick connects you with trusted vendors, services, and offers in your area</div>
+            
+            <div class="app-showcase">
+                <div class="app-features">
+                    <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div>
+                            <h4>Smart Local Search</h4>
+                            <p>Search by category or location to find exactly what you need</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Verified Vendor Listings</h4>
+                            <p>Connect with trusted, verified local service providers</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div>
+                            <h4>Exclusive Local Deals</h4>
+                            <p>Discover special offers and deals from nearby businesses</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div>
+                            <h4>In-App Communication</h4>
+                            <p>Chat directly with vendors or contact them instantly</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-right" data-aos-delay="500">
+                        <div class="feature-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <div>
+                            <h4>Google Maps Integration</h4>
+                            <p>Navigate easily to your chosen vendor or service location</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-right" data-aos-delay="600">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div>
+                            <h4>User-Friendly Interface</h4>
+                            <p>Beautiful, intuitive design for Android & iOS devices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-mockup fade-up" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="phone">
+                        <div class="phone-screen">
+                            <div class="app-preview">
+                                <div class="app-logo">
+                                    <i class="fas fa-gift"></i>
+                                    <span>Bumperpick</span>
+                                </div>
+                                <div class="app-features-preview">
+                                    <div class="preview-item">Find Local Vendors</div>
+                                    <div class="preview-item">Exclusive Deals</div>
+                                    <div class="preview-item">Verified Services</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="coming-soon">
+                        <i class="fab fa-google-play"></i>
+                        <i class="fab fa-app-store"></i>
+                        Coming soon to Google Play and App Store
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-title fade-up">Why Choose Us</div>
+            <div class="section-subtitle fade-up">Your trusted partner for digital solutions</div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Local Market Expertise</h3>
+                    <p>Deep understanding of local market dynamics and customer behavior</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Scalable Solutions</h3>
+                    <p>Simple, scalable digital solutions that grow with your business</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Focus</h3>
+                    <p>Commitment to quality, innovation, and cutting-edge technology</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Reliable Support</h3>
+                    <p>Comprehensive support and maintenance for all our solutions</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Small Business Focus</h3>
+                    <p>Specially designed solutions with small businesses in mind</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title fade-up" style="color: white;">Contact Us</div>
+            <div class="section-subtitle fade-up" style="color: rgba(255,255,255,0.8);">We'd love to hear from you! Reach out to us today.</div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item fade-up">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91-XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-up">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@triosys.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-up">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Website</h4>
+                            <p>www.triosys.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-up">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kochi, Kerala, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-up">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 Triosys Marketing Solutions. All Rights Reserved.</p>
+                    <p>Made with in India</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
