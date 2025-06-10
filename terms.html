@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - BUMPERPICK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #1976d2;
+            --primary-red: #e53e3e;
+            --dark-blue: #1565c0;
+            --light-blue: #42a5f5;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #1976d2 0%, #e53e3e 100%);
+            --gradient-alt: linear-gradient(135deg, #1565c0 0%, #d32f2f 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        /* Header */
+        .header {
+            background: var(--gradient);
+            color: white;
+            padding: 60px 0 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.02) 10px,
+                rgba(255, 255, 255, 0.02) 20px
+            );
+            animation: movePattern 30s linear infinite;
+        }
+
+        @keyframes movePattern {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(40px); }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            animation: slideUp 1s ease forwards;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: slideUp 1s ease forwards 0.2s;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .back-btn i {
+            margin-right: 8px;
+        }
+
+        /* Navigation Tabs */
+        .tab-navigation {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .tab-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .tab-btn.active {
+            color: var(--primary-blue);
+        }
+
+        .tab-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: var(--gradient);
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .tab-btn.active::after {
+            width: 80%;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary-blue);
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 2rem;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .terms-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .terms-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(25, 118, 210, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            padding-bottom: 10px;
+            border-bottom: 2px solid transparent;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: var(--gradient);
+            border-radius: 1px;
+        }
+
+        .terms-content h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 30px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .terms-content h3::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        .terms-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .terms-content ul {
+            margin: 15px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .terms-content li {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            font-weight: 400;
+        }
+
+        .terms-content li::before {
+            content: '•';
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(25, 118, 210, 0.05), rgba(229, 62, 62, 0.05));
+            border: 1px solid rgba(25, 118, 210, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gradient);
+        }
+
+        .highlight-box h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlight-box h4 i {
+            color: var(--primary-blue);
+        }
+
+        .contact-info {
+            background: var(--text-dark);
+            color: white;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 70%, rgba(25, 118, 210, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 30%, rgba(229, 62, 62, 0.3) 0%, transparent 50%);
+        }
+
+        .contact-info-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+
+        .contact-item i {
+            color: var(--light-blue);
+        }
+
+        .last-updated {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(25, 118, 210, 0.05);
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 0 30px;
+            }
+
+            .header h1 {
+                font-size: 2.2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .back-btn {
+                position: relative;
+                top: auto;
+                left: auto;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+
+            .tab-container {
+                flex-direction: column;
+            }
+
+            .tab-btn {
+                padding: 15px 20px;
+                font-size: 1rem;
+                border-bottom: 1px solid #e5e7eb;
+            }
+
+            .tab-btn::after {
+                bottom: 0;
+                height: 2px;
+            }
+
+            .main-content {
+                padding: 40px 1rem;
+            }
+
+            .terms-card {
+                padding: 25px;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .terms-content h3 {
+                font-size: 1.2rem;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .terms-card {
+                padding: 20px;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+
+            .terms-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .terms-content p,
+            .terms-content li {
+                font-size: 0.95rem;
+            }
+
+            .contact-info {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+           
+            <h1>Terms & Conditions</h1>
+            <p>Please read our terms and conditions carefully before using BUMPERPICK</p>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tab-navigation">
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="showTab('customers')">
+                <i class="fas fa-users"></i> Customer Terms
+            </button>
+            <button class="tab-btn" onclick="showTab('vendors')">
+                <i class="fas fa-store"></i> Vendor Terms
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Customer Terms -->
+        <div id="customers" class="tab-content active">
+            <div class="terms-card">
+                <h2 class="section-title">Terms & Conditions for Customers</h2>
+                
+                <div class="terms-content">
+                    <h3>Introduction</h3>
+                    <p>Welcome to BUMPERPICK, owned and operated by Triosys Marketing Solutions ("Triosys", "we," "our," or "us"). By using our app, you agree to these Terms and Conditions (T&Cs). Please read them carefully before registering. If you do not agree, do not proceed with registration.</p>
+
+                    <h3>Account Registration</h3>
+                    <p>Customers must provide accurate and complete information during registration. You are responsible for maintaining the confidentiality of your account credentials.</p>
+
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-mobile-alt"></i> Usage of the App</h4>
+                        <ul>
+                            <li>The app is intended for viewing and interacting with advertisements provided by our Vendors.</li>
+                            <li>Any misuse, unauthorized access, or attempt to interfere with the app's functionality is prohibited.</li>
+                            <li>You agree not to post or transmit any harmful, unlawful, or offensive content.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Privacy Policy</h3>
+                    <p>Your personal information will be used in accordance with our Privacy Policy, which outlines how we collect, store, and use your data.</p>
+
+                    <h3>Limitation of Liability</h3>
+                    <ul>
+                        <li>Any disputes between you and a Vendor must be resolved directly between the parties.</li>
+                        <li>All the offers and advertisements on this app are posted by respective Vendors. Triosys/BUMPERPICK is not responsible for the accuracy, validity, or fulfillment of any such offers.</li>
+                        <li>All gifts and offers given by the Vendors must be handed over directly to the Customers by the Vendors. Triosys/BUMPERPICK is not responsible for the delivery or quality of these gifts or offers.</li>
+                    </ul>
+
+                    <h3>Copyrights and Intellectual Property</h3>
+                    <p>All copyrights and intellectual property rights of the images and product descriptions used by the Vendors are the sole responsibility of the respective Vendors. Triosys/BUMPERPICK holds no responsibility or liability for the same.</p>
+
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-gavel"></i> Jurisdiction</h4>
+                        <p>All disputes arising from or in connection with these T&Cs shall be subject to the exclusive jurisdiction of the courts in Thrissur District, Kerala.</p>
+                    </div>
+
+                    <h3>Termination</h3>
+                    <p>We reserve the right to terminate your account for violations of these T&Cs or any applicable law.</p>
+
+                    <h3>Changes to T&Cs</h3>
+                    <p>These T&Cs may be updated from time to time. Your continued use of the app indicates your acceptance of the updated terms.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vendor Terms -->
+        <div id="vendors" class="tab-content">
+            <div class="terms-card">
+                <h2 class="section-title">Terms & Conditions for Vendors</h2>
+                
+                <div class="terms-content">
+                    <h3>Introduction</h3>
+                    <p>Thank you for choosing BUMPERPICK, owned and operated by Triosys Marketing Solutions, to showcase your advertisements! By registering as a Vendor, you agree to these Terms and Conditions (T&Cs). Please review them carefully before proceeding.</p>
+
+                    <h3>Account Registration</h3>
+                    <ul>
+                        <li>Vendors must provide accurate business details during registration, including valid contact information and any required licenses or permits.</li>
+                        <li>You are responsible for the security of your account credentials.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-clipboard-list"></i> Content and Advertisement Policies</h4>
+                        <ul>
+                            <li>All advertisements must comply with Indian laws, regulations, and app guidelines.</li>
+                            <li>Prohibited content includes, but is not limited to, misleading claims, offensive material, and illegal products/services.</li>
+                            <li>Vendors can list only such services and products which are legally approved as per the relevant laws of India.</li>
+                            <li>Triosys/BUMPERPICK reserves the right to review, approve, or reject any advertisement at its sole discretion.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Fees and Payment</h3>
+                    <ul>
+                        <li>Vendors may be subject to subscription or advertisement fees. Payment terms will be detailed separately.</li>
+                        <li>Failure to make payments on time may result in account suspension or termination.</li>
+                    </ul>
+
+                    <h3>Vendor Responsibilities</h3>
+                    <ul>
+                        <li>Vendors are solely responsible for the products/services advertised, including their accuracy and availability.</li>
+                        <li>Vendors must handle customer inquiries, complaints, and disputes directly and professionally.</li>
+                        <li>All gifts and offers given by Vendors must be handed over directly to the Customers. Triosys/BUMPERPICK is not responsible for the delivery or quality of these gifts or offers.</li>
+                        <li>All copyrights and intellectual property rights of the images and product descriptions used by the Vendors are the sole responsibility of the respective Vendors. Triosys/BUMPERPICK holds no responsibility or liability for the same.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-shield-alt"></i> Liability and Indemnity</h4>
+                        <ul>
+                            <li>Triosys/BUMPERPICK is not liable for any disputes, claims, or losses arising from your advertisements.</li>
+                            <li>You agree to indemnify and hold Triosys/BUMPERPICK harmless from any claims resulting from your use of the app.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Jurisdiction</h3>
+                    <p>All disputes arising from or in connection with these T&Cs shall be subject to the exclusive jurisdiction of the courts in Thrissur District, Kerala.</p>
+
+                    <h3>Termination</h3>
+                    <p>Triosys/BUMPERPICK may terminate or suspend Vendor accounts for violations of these T&Cs or applicable law.</p>
+
+                    <h3>Changes to T&Cs</h3>
+                    <p>These T&Cs may be modified periodically. Continued use of the app signifies acceptance of the updated terms.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div class="contact-info-content">
+                <h3>Need Help or Have Questions?</h3>
+                <p>If you have any questions about these Terms & Conditions, please don't hesitate to contact us.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@bumperpick.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 XXX XXX XXXX</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Thrissur, Kerala, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="last-updated">
+            <p><i class="fas fa-calendar-alt"></i> Last Updated: June 2025</p>
+        </div>
+    </main>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all tab buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all terms cards
+        document.querySelectorAll('.terms-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
