@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triosys Marketing Solutions - Local Business Digital Solutions</title>
-    
+
     <!-- External CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="./images/Bumperpick_Logo_Final_page-0001-removebg-preview.png" type="image/png">
 
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Loading Screen -->
     <div class="loading" id="loading">
@@ -25,26 +28,16 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo-container">
-                <svg class="logo" viewBox="0 0 200 60" fill="none">
-                    <!-- Gift box outline in red -->
-                    <rect x="10" y="15" width="30" height="25" rx="3" fill="none" stroke="#e53e3e" stroke-width="2.5"/>
-                    <!-- Gift ribbon horizontal -->
-                    <line x1="10" y1="27.5" x2="40" y2="27.5" stroke="#e53e3e" stroke-width="2.5"/>
-                    <!-- Gift ribbon vertical -->
-                    <line x1="25" y1="15" x2="25" y2="40" stroke="#e53e3e" stroke-width="2.5"/>
-                    <!-- Bow curves -->
-                    <path d="M20,15 Q17,10 20,8 Q25,10 22,15" fill="#e53e3e"/>
-                    <path d="M28,15 Q31,10 28,8 Q23,10 26,15" fill="#e53e3e"/>
-                    <!-- B letter in blue inside box -->
-                    <text x="19" y="33" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1976d2">B</text>
-                    <!-- Bumper text in red -->
-                    <text x="50" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#e53e3e">Bumper</text>
-                    <!-- pick text in blue -->
-                    <text x="130" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#1976d2">pick</text>
-                    <!-- by Triosys text -->
-                    <text x="50" y="40" font-family="Arial, sans-serif" font-size="9" font-weight="400" fill="#6b7280">by Triosys Marketing Solutions</text>
-                </svg>
+                <!-- Replace 'your-logo-image.png' with your actual image path -->
+                <img src="./images/Bumperpick_Logo_Final_page-0001-removebg-preview.png" alt="Bumper Pick by Triosys Marketing Solutions" class="logo"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <!-- Fallback div that shows if image fails to load -->
+                <div class="logo-fallback" style="display: none;">
+                    Bumper Pick
+                </div>
             </div>
+
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -71,7 +64,8 @@
         </div>
         <div class="hero-content">
             <h1 class="hero-main-title">Connect Locally, <span class="gradient-text">Grow Digitally</span></h1>
-            <p class="hero-subtitle">Empowering local businesses and consumers through innovative digital platforms that simplify everyday connections and choices.</p>
+            <p class="hero-subtitle">Empowering local businesses and consumers through innovative digital platforms that
+                simplify everyday connections and choices.</p>
             <div class="hero-buttons">
                 <a href="#bumperpick" class="btn-primary">Discover Bumperpick</a>
                 <a href="#about" class="btn-secondary">Learn More</a>
@@ -87,27 +81,34 @@
         <div class="container">
             <div class="section-title fade-up">Welcome to Triosys Marketing Solutions</div>
             <div class="section-subtitle fade-up">Forward-thinking digital solutions provider based in India</div>
-            
+
             <div class="about-content">
                 <div class="about-text fade-up">
-                    <p>Triosys Marketing Solutions is a forward-thinking digital solutions provider based in India. With a sharp focus on innovation and user-centric design, we help businesses and local communities connect better through smart technology.</p>
+                    <p>Triosys Marketing Solutions is a forward-thinking digital solutions provider based in India. With
+                        a sharp focus on innovation and user-centric design, we help businesses and local communities
+                        connect better through smart technology.</p>
                     <br>
-                    <p>Our team blends marketing insight with software expertise to deliver impactful solutions. At the core of our service is Bumperpick, a hyperlocal search application designed to connect users with local vendors, services, and businesses – all in one place.</p>
+                    <p>Our team blends marketing insight with software expertise to deliver impactful solutions. At the
+                        core of our service is Bumperpick, a hyperlocal search application designed to connect users
+                        with local vendors, services, and businesses – all in one place.</p>
                 </div>
                 <div class="about-image fade-up">
                     <div class="floating-cards">
                         <div class="floating-card card-1">
-                            <i class="fas fa-search" style="color: var(--primary-blue); font-size: 2rem; margin-bottom: 1rem;"></i>
+                            <i class="fas fa-search"
+                                style="color: var(--primary-blue); font-size: 2rem; margin-bottom: 1rem;"></i>
                             <h4>Smart Search</h4>
                             <p>Find exactly what you need</p>
                         </div>
                         <div class="floating-card card-2">
-                            <i class="fas fa-map-marker-alt" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                            <i class="fas fa-map-marker-alt"
+                                style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
                             <h4>Local Focus</h4>
                             <p>Connect with nearby businesses</p>
                         </div>
                         <div class="floating-card card-3">
-                            <i class="fas fa-handshake" style="color: var(--primary-blue); font-size: 2rem; margin-bottom: 1rem;"></i>
+                            <i class="fas fa-handshake"
+                                style="color: var(--primary-blue); font-size: 2rem; margin-bottom: 1rem;"></i>
                             <h4>Trusted Network</h4>
                             <p>Verified vendors and services</p>
                         </div>
@@ -122,15 +123,17 @@
         <div class="container">
             <div class="section-title fade-up">Mission & Vision</div>
             <div class="section-subtitle fade-up">Driving the future of local commerce</div>
-            
+
             <div class="mv-grid">
                 <div class="mv-card fade-up">
                     <h3>Our Mission</h3>
-                    <p>To empower local businesses and consumers through innovative digital platforms that simplify everyday connections and choices.</p>
+                    <p>To empower local businesses and consumers through innovative digital platforms that simplify
+                        everyday connections and choices.</p>
                 </div>
                 <div class="mv-card fade-up">
                     <h3>Our Vision</h3>
-                    <p>To become the most trusted enabler of local commerce and discovery by building scalable, user-friendly, and community-driven digital tools.</p>
+                    <p>To become the most trusted enabler of local commerce and discovery by building scalable,
+                        user-friendly, and community-driven digital tools.</p>
                 </div>
             </div>
         </div>
@@ -159,8 +162,9 @@
         </div>
         <div class="container">
             <div class="section-title fade-up">Your Local Search <span class="gradient-text">Companion</span></div>
-            <div class="section-subtitle fade-up">Bumperpick connects you with trusted vendors, services, and offers in your area</div>
-            
+            <div class="section-subtitle fade-up">Bumperpick connects you with trusted vendors, services, and offers in
+                your area</div>
+
             <div class="app-showcase">
                 <div class="app-features">
                     <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
@@ -249,7 +253,7 @@
         <div class="container">
             <div class="section-title fade-up">Why Choose Us</div>
             <div class="section-subtitle fade-up">Your trusted partner for digital solutions</div>
-            
+
             <div class="features-grid">
                 <div class="feature-card fade-up">
                     <div class="icon">
@@ -294,8 +298,9 @@
     <section class="section contact" id="contact">
         <div class="container">
             <div class="section-title fade-up" style="color: white;">Contact Us</div>
-            <div class="section-subtitle fade-up" style="color: rgba(255,255,255,0.8);">We'd love to hear from you! Reach out to us today.</div>
-            
+            <div class="section-subtitle fade-up" style="color: rgba(255,255,255,0.8);">We'd love to hear from you!
+                Reach out to us today.</div>
+
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item fade-up">
@@ -327,7 +332,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form fade-up">
                     <form id="contact-form">
                         <div class="form-group">
@@ -340,7 +345,8 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?"
+                                required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
@@ -367,8 +373,9 @@
 
     <!-- External JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
+
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>

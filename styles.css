@@ -33,10 +33,7 @@ body {
     font-size: 17px; /* Slightly increased from 16px */
 }
 
-/* ================================
-   NAVIGATION
-   ================================ */
-
+/* ================================    NAVIGATION    ================================ */
 .navbar {
     position: fixed;
     top: 0;
@@ -44,12 +41,13 @@ body {
     background: transparent;
     backdrop-filter: blur(0px);
     z-index: 1000;
-    padding: 1.2rem 0; /* Slightly increased */
+    padding: 0.8rem 0; /* Reduced from 1.2rem */
     transition: all 0.4s ease;
+    margin-bottom: -50px;
 }
 
 .navbar.scrolled {
-    padding: 1rem 0; /* Slightly increased */
+    padding: 0.6rem 0; /* Reduced from 1rem */
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -64,9 +62,17 @@ body {
     padding: 0 1.7rem; /* Slightly increased */
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0; /* Reduced from 20px to 10px vertical padding */
+}
+
 .logo {
-    height: 45px; /* Moderately increased from 40px */
+    height: 65px; /* Keeping the same logo height */
+    width: auto; /* Maintains aspect ratio */
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .logo:hover {
@@ -115,19 +121,18 @@ body {
     border-radius: 1px;
 }
 
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
+.nav-menu a:hover::after, .nav-menu a.active::after {
     width: 100%;
 }
 
 .cta-btn {
     background: var(--gradient);
     color: white;
-    padding: 14px 28px; /* Slightly increased */
+    padding: 10px 24px; /* Reduced from 14px 28px */
     border-radius: 25px;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem; /* Slightly increased */
+    font-size: 0.95rem; /* Slightly reduced from 1rem */
     transition: all 0.3s ease;
     box-shadow: 0 3px 12px rgba(37, 99, 235, 0.3);
 }
@@ -154,7 +159,6 @@ body {
 .navbar.scrolled .hamburger {
     background: var(--text-dark);
 }
-
 /* ================================
    HERO SECTION
    ================================ */
